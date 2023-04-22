@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="Website Icon" href="unit32.png" type="image/png">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Unit Converter</title>
+		
+	</head>
+	<style>
+		.card{
+		    border-style: groove;
+			border-color:black;
+			border-radius:5px;
+			box-shadow:#030029;
+			
+		}
+		.container{
+			padding-top: 10px;
+			margin-top: 20px;
+            border-style:groove;
+			border-color: rgb(235, 25, 154);
+			border-width: 10px;
+			box-shadow: 0 0 30px #e384ff;
+			position:relative;
+			justify-items: center;
+			
+		}
+		h1{
+			text-align: center;
+			color:#030029;
+			font-family:system-ui;
+			text-shadow: 0 0 7px whitesmoke;
+			font-size: x-large;
+			
+		}
+		.btn{
+			box-shadow: 0 0 8px #030029;
+			border-color:#030029;
+			font-size: xx-large;
+		}
+		.btn:hover{
+			color:#030029;
+		}
+		a {
+			text-decoration: none;
+		  } 
+		a:hover{
+			color:#030029;
+		}  
+		
+	</style>
+	<body style="font-size: xxx-large; background-color:#030029">
+		<div class="container my-5" style="background-color:#865dff; border-style:double; border-color:white; border-width:2px;"><br/>
+			<h1 class="mb-5 text-center"><i class="fas fa-balance-scale"><a href="/">  Unit Converter</a></i></h1>
+			<div class="flex flex-md-row ml-10 py-10 ">
+				<div class="col-md-4 mb-5 pr-10">
+					<div class="card">
+						<button class="btn bg-blue-400 text-gray-100  py-4 " onclick="length()"><i class="fas fa-ruler"></i> Length</button>
+					</div>
+					</div>
+				<div class="col-md-4 mb-5 pr-10">
+					<div class="card">
+						<button class="btn bg-blue-500 text-gray-100 w-full py-4  " onclick="weight()"><i class="fas fa-weight-hanging"></i> Weight</button>
+				</div></div>
+				<div class="col-md-4 mb-5 pr-10">
+					<div class="card">
+					<button class="btn  bg-indigo-600 text-gray-100 w-full py-4 " onclick="speed()"><i class="fas fa-tachometer-alt"></i> Speed</button>
+				</div></div>
+			</div>
+			<div class="flex flex-md-row py-15 ml-10">
+				<div class="col-md-4 mb-5 pr-5 mx-20">
+					<div class="card">
+						<button class="btn bg-blue-700 text-gray-100 w-full py-4  " onclick="temperature()"><i class="fas fa-thermometer-half"></i> Temperature</button>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5 pr-5 mx-20">
+					<div class="card">
+					<button class="btn bg-blue-800 text-gray-100 w-full py-4 " onclick="digs()"><i class="fas fa-database"></i> Digital Storage</button>	
+			</div>
+			<script src="js/script.js"></script>
+	</body>
+	
+</html>
